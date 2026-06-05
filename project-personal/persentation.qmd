@@ -1,0 +1,143 @@
+---
+title: "Этапы реализации проекта: Личный сайт на GitHub Pages"
+subtitle: "Поддержка двух языков"
+author: "Ван Хаоцзянь"
+institute: "РУДН"
+date: "2026-05-30"
+format:
+  beamer:
+    theme: "Madrid"
+    colortheme: "default"
+    fonttheme: "professionalfonts"
+    toc: false
+    slide-level: 2
+    mainfont: "DejaVu Serif"
+    sansfont: "DejaVu Sans"
+    monofont: "DejaVu Sans Mono"
+    lang: ru
+---
+
+## Цель работы
+
+- Настроить двуязычный сайт на Hugo
+- Добавить русский и английский языки
+- Создать посты на двух языках
+- Обновить структуру проекта
+
+---
+
+## Настройка языков
+
+Файл `config/_default/languages.yaml`:
+
+```yaml
+ru:
+  languageCode: ru-RU
+  languageName: Русский
+  contentDir: content/ru
+
+en:
+  languageCode: en-US
+  languageName: English
+  contentDir: content/en
+```
+
+---
+
+## Структура каталогов
+
+Созданы каталоги для двух языков:
+
+```text
+content/
+├── ru/
+│   ├── blog/
+│   ├── project/
+│   └── authors/
+└── en/
+    ├── blog/
+    ├── project/
+    └── authors/
+```
+
+---
+
+## Авторская информация
+
+Файл для английской версии:
+
+```text
+content/en/authors/me/_index.md
+```
+
+Содержит данные об авторе на английском языке:
+
+```markdown
+title: "Wang Haojian"
+role: "student"
+bio: "RUDN student, OS and architecture."
+```
+
+---
+
+## Пост о прошедшей неделе
+
+Созданы две версии поста:
+
+```text
+content/ru/blog/week4-bilingual/
+content/en/blog/week4-bilingual/
+```
+
+Русская версия:
+
+```markdown
+На этой неделе я настроил поддержку двух языков.
+Сайт доступен на русском и английском.
+```
+
+---
+
+## Тематический пост о Markdown
+
+Созданы посты о языке разметки Markdown:
+
+```text
+content/ru/blog/markdown-bilingual/
+content/en/blog/markdown-bilingual/
+```
+
+Тематика:
+
+- Markdown
+- Разметка текста
+- Работа с Hugo
+- Примеры форматирования
+
+---
+
+## Русская версия сайта
+
+![](images/project_26_bilingual_post_ru.png)
+
+---
+
+## Результаты работы
+
+В ходе проекта:
+
+- Настроены два языка (ru/en)
+- Создан мультиязычный контент
+- Переведена информация об авторе
+- Добавлены новые посты
+- Опубликован сайт на GitHub Pages
+
+---
+
+## Ссылка на сайт
+
+```text
+
+```
+
+# Спасибо за внимание!
